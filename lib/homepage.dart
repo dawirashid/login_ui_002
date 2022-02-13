@@ -22,11 +22,13 @@ class _HomepageState extends State<Homepage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xc1553f3f),
+      backgroundColor: const Color(0xc1f3d9c8),
+      body: children[selectedItem], // lint from navigation bar to display each dashboard
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 10,
         backgroundColor: const Color(0xc1553f2f),
         selectedItemColor: const Color(0xc1ece6e8),
-        iconSize: 27.0,
+        iconSize: 25.0,
         currentIndex: selectedItem,
         unselectedLabelStyle: const TextStyle(
           color: Color(0xc1ac9b88),
@@ -44,7 +46,7 @@ class _HomepageState extends State<Homepage>
               color: Color(0xc1ece6e8),
             ),
             label: 'Home',
-            backgroundColor: Color(0xc10e0b06),
+            backgroundColor: Color(0xc1938616),
           ),
           BottomNavigationBarItem(
             icon: Icon(
